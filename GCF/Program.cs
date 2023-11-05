@@ -1,20 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("This Program to Calculate GCF");
+Console.WriteLine("This Program Calculates divisors of an integer > 1.");
 int n;
 
 while (true)
 {
-    Console.WriteLine("Enter number bigger than 1 to start or 0 to exit");
+    Console.WriteLine("Enter an integer > 1 to start or 0 to exit");
     var str = Console.ReadLine();
     if (!int.TryParse(str, out n))
     {
-        Console.WriteLine($"You enter wrong Number '{str}' please renter vaild");
+        Console.WriteLine($"You entered invalid input '{str}'.");
         continue;
     }
 
     if (n == 0)
     {
-        Console.WriteLine("You enter 0, thanks for using this program. Godd Bye!");
+        Console.WriteLine("You enter 0, thanks for using this program. Good Bye!");
         break;
     }
 
@@ -37,6 +37,6 @@ while (true)
     }
     if (sum == n)
     {
-        Console.WriteLine("The number {0} is perfect number", n);
+        Console.WriteLine("The number {0} is a perfect number", n);
     }
 }
